@@ -3,6 +3,7 @@
 ## 2022
 
 import colors
+import statusbar
 import os
 
 def main():
@@ -40,6 +41,8 @@ def main():
     print(colors.colortext("bg colors (intense):   ", "green") + intenseBackgroundTestString)
     print()
     print(colors.colortext("wow, cool colors!", "yellow", highIntensityText = True))
+
+    print(colors.colortext(statusbar.getbar(.6541), "cyan"))
 
 
 if __name__ == "__main__":
