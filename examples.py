@@ -7,8 +7,11 @@ import statusbar
 import os
 
 def main():
-    print(colors.colortext("The following output is a test of my modules.","yellow"))
-    print()
+    ## INTRO
+    print(colors.colortext("The following output is a test of my modules.\n","yellow"))
+
+    ## COLORS TEST
+    print(colors.colortext("COLORS", "purple", style="b"))
     
     # Define what colors we want to use in a list. See colors.py
     colorsToTest = ["red", "yellow", "green", "cyan", "blue", "purple", "white", "black"]
@@ -40,9 +43,14 @@ def main():
     print(colors.colortext("bg colors (normal):    ", "green") + backgroundTestString)
     print(colors.colortext("bg colors (intense):   ", "green") + intenseBackgroundTestString)
     print()
-    print(colors.colortext("wow, cool colors!", "yellow", highIntensityText = True))
+    print(colors.colortext("wow, cool colors!\n", "yellow", highIntensityText = True))
 
+    ## STATUSBAR TEST
+    print(colors.colortext("STATUSBAR", "purple", style="b"))
     print(colors.colortext(statusbar.getbar(.6541), "cyan"))
+
+    ## EXIT
+    print(colors.colortext("\nGOODBYE!", "purple", style="b"))
 
 
 if __name__ == "__main__":
